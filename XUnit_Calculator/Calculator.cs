@@ -26,7 +26,15 @@ namespace XUnit_Calculator
 
         public double Divide(double no1, double no2)
         {
-            return no1 / no2;
+            if (no2 != 0)
+            {
+                return no1 / no2; 
+            }
+            else
+            {
+                // Custom business logic for divide by zero
+                return 0;
+            }
         }
     }
 }
